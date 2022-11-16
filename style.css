@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* font import */
+
+
+/* Web site */
+
+body {
+    background-color: #F2EAE2;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width:640px) {
+    .container {
+        width: 600px;
+        height: 450px;
+        border-radius: 10px;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.product-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+
+.product-photo {
+
+    background: url('imagea/product-photo.png') no-repeat;
+    width: 100%;
+
+
+}
+
+.product-category {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #6C7289;
+    line-height: 15px;
+    box-sizing: border-box;
+    margin-top: 20px;
+
+}
+
+.product-title {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #1C232B;
+    line-height: 32px;
+
+
+}
+
+.product-description {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #6C7289;
+
+
+}
+
+
+.sales-price {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3D8168;
+    margin-right: 20px;
+}
+
+.retail-price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    text-decoration-line: line-through;
+    color: #6C7289;
+
+}
+
+.add-to-cart-button {
+    background: #3D8168;
+    border-radius: 8px;
+    width: 236px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top:90px; */
+}
+
+.add-to-cart-button:hover {
+
+    background-color: #1A4032;
+}
+
+
+
+.add-to-cart-button p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    /* Pure White */
+    color: #FFFFFF;
+
+
+}
+
+.price-tag {
+    display: flex;
+    align-items: center;
+}
+
+.button-card li {
+    display: inline-block;
+    vertical-align: middle;
+
+
+}
+
+
+@media (max-width:640px) {
+    .container {
+        width: 343px;
+        height: 611px;
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        background-color: #FFFFFF;
+
+
+    }
+
+    .product-photo img {
+        border-radius: 10px;
+    }
+
+    .product-photo {
+
+        background: url('imagea/parfum-responsive.png') no-repeat;
+        width: 100%;
+
+
+    }
+
+    .product-description p {
+
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 500;
+
+    }
+
+    .product-card {
+        width: 343px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding-right: 25px;
+
+
+    }
+
+
+    .product-card div {
+        padding: 10px 0 10px 0;
+    }
+
+    .add-to-cart-button {
+        width: 100%;
+
+    }
+
+
+
+}
